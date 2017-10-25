@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CAR RENTAL</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="css/flexslider.css" type="text/css"/>
+</head>
+<body>
+	<header>
+		<nav>
+			<div class="logo"><img src="images/logo.jpg"></div>
+			<ul>
+				<li><a>HOME</a></li>
+				<li><a>BOOK NOW</a></li>
+				<li><a>OUR FLEET</a></li>
+				<li><a>CONTACT US</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<div class="main-content">
+		<div class="home">
+
+        <div class="flexslider">
+          <ul class="slides">
+            <li style="background-image: url('images/carbg.jpg');"></li>
+			<li style="background-image: url('images/car2.jpg');"></li>
+			<li style="background-image: url('images/car3.jpg');"></li>
+          </ul>
+        </div>
+
+
+
+			<div class="book-now-btn">
+				<span>BOOK NOW</span>
+			</div>
+
+			<div class="home-icons">
+				<ul>
+					<li><img src="images/icons/gps.png"></li>
+					<li><img src="images/icons/milleage.png"></li>
+					<li><img src="images/icons/guarantee.png"></li>
+					<li><img src="images/icons/free_delivery.png"></li>
+					<li><img src="images/icons/free_driver.png"></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	
+
+	<footer>
+		<span>© Am Smile Car Rental 2017</span>
+	</footer>
+
+
+      <script src="js/jquery.js"></script>
+	  <script src="js/jquery.flexslider.js"></script>
+
+	  <script>
+
+	  	$(window).load(function(){
+         $('.flexslider').flexslider({
+        animation: "slide",
+        start: function(slider){
+         
+        }
+      });
+    });
+	  	
+	  </script>
+
+</body>
+</html>
