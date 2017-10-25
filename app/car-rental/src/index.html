@@ -5,12 +5,30 @@
   <title>CarRental</title>
   <base href="/">
   <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+  <link rel="stylesheet" type="text/css" href="../assets/components/flexslider/flexslider.css">
+  <script src="../assets/components/jquery/jquery.js"></script>
+  <script src="../assets/components/flexslider/jquery.flexslider.js"></script>
+  <script src="../assets/components/angular/angular.js"></script>
+  <script src="../assets/components/angular-flexslider/angular-flexslider.js"></script>
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
   <app-root></app-root>
-  <app-header></app-header>
+
+	  <script>
+
+	  	$(window).load(function(){
+         $('.flexslider').flexslider({
+        animation: "slide",
+        start: function(slider){
+         
+        }
+      });
+    });
+	  	
+	  </script>
+  
 </body>
 </html>
