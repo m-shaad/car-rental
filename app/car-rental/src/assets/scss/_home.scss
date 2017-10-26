@@ -6,18 +6,25 @@ html, body
 	padding:0;
 	margin:0;
 }
+
+
+.main-container
+{
+	width:80%;
+	height:100%;
+	float:left;
+}
+
 .main-content
 {
 	height:100%;
 }
 .home
 {
-	width:80%;
-	height:100%;
-	
 	background-size:cover;
-	float:left;
 	position:relative;
+	width: 100%;
+	height: 100%;
 
 
 	.flex-nav-next, .flex-nav-prev, .flex-direction-nav
@@ -68,6 +75,53 @@ html, body
 	  }
 	}
 
+	ngx-carousel
+	{
+		width: 100%;
+		height: 100%;
+		position:absolute;
+
+		.banner, .ngxcarousel, .ngxcarousel-inner, .ngxcarousel-items, ngx-item
+		{
+		   width: 100%;
+		   height: 100%;
+		}
+
+
+	.ngxcarousel-items
+	{
+		*
+		{
+			width: 100%;
+			height: 100%;
+		}
+
+	}
+    .carousel
+    {
+    		    	height:100%;
+	    	width:100%;
+	
+	background-size:cover;
+	float:left;
+
+    }
+
+    .leftRs, .rightRs
+    {
+    	display: none;
+    }
+
+
+
+	}
+
+	.banner[_ngcontent-c3]   .ngxcarouselPointDefault[_ngcontent-c3]   .ngxcarouselPoint[_ngcontent-c3]
+	{
+		bottom: 80px;
+	}
+
+
 
 	.book-now-btn
 	{
@@ -111,14 +165,16 @@ html, body
 
 		  width:100%;
 		  text-align:center;
+		  margin: 0;
+		  padding: 0;
 
 			li
 				{
 				  list-style:none;
 				  display:inline-block;
 				  width:40px;
-				  height:40px;
-				  padding:0 30px;
+				    padding: 5px 0;
+				    margin: 0 15px;
 
 				  img
 				  {

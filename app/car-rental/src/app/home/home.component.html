@@ -1,12 +1,43 @@
+		
+<div class="main-container">
 		<div class="home">
-
-        <div class="flexslider">
+<!-- 
+        <div id = "flexslider" class="flexslider">
           <ul class="slides">
             <li style="background-image: url('assets/images/carbg.jpg');"></li>
-			<li style="background-image: url('assets/images/car2.jpg');"></li>
+			<li style="background-image: url('assets/images/carbg.jpg');"></li>
 			<li style="background-image: url('assets/images/car3.jpg');"></li>
           </ul>
-        </div>
+        </div> -->
+
+<!--         <carousel>
+			  <slide>
+			    <img src="assets/images/carbg.jpg" alt="First slide">
+			  </slide>
+			  <slide>
+			    <img src="assets/images/car2.jpg" alt="Second slide">
+			  </slide>
+			  <slide>
+			    <img src="assets/images/car3.jpg" alt="Third slide">
+  			  </slide>
+		</carousel> -->
+
+		 <ngx-carousel
+        [inputs]="carouselOne"
+        (carouselLoad)="myfunc($event)">
+          <ngx-item NgxCarouselItem>
+            <div class="carousel" style="background-image: url('assets/images/carbg.jpg');"></div>
+          </ngx-item>
+          <ngx-item NgxCarouselItem>
+            <div class="carousel" style="background-image: url('assets/images/car2.jpg');"></div>
+          </ngx-item>
+          <ngx-item NgxCarouselItem>
+            <div class="carousel" style="background-image: url('assets/images/car3.jpg');"></div>
+          </ngx-item>
+
+          <button NgxCarouselPrev class='leftRs'>&lt;</button>
+          <button NgxCarouselNext class='rightRs'>&gt;</button>
+    	 </ngx-carousel>
 
 
 
@@ -23,4 +54,7 @@
 					<li><img src="assets/images/icons/free_driver.png"></li>
 				</ul>
 			</div>
+
 		</div>
+		</div>
+

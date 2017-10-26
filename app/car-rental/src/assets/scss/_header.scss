@@ -47,6 +47,7 @@ ul
 	  
 	  	font-family:arial;
 	  	font-size:14px;
+	  	color: #2baf88;
 	  	cursor:pointer;
 
 	  	&:before
@@ -64,6 +65,7 @@ ul
 	  	&:hover
 	  	{
 	  	  color:#ffffff;
+	  	  text-decoration: none;
 
 	  	  &:before
 	  	  {
